@@ -13,6 +13,5 @@ $$F_\alpha (w) = \frac{1}{n_{train}} \sum_{i = 1}^{n_{train}} \log~(\sum_{j = 0}
 The optimization problem we are trying to solve in this question is a bilevel optimization problem.
 $$max_{\alpha\in A} L(w_\alpha)$$
 where $w_\alpha \in argmin_w F_\alpha(w)$ We will then solve a sequence of optimization problems indexed by α and choose the best $\alpha$.
-\item By groups of at least 3, compare optimization algorithms in terms of classication perfor-
-mance and speed of convergence.
+\item By groups of at least 3, compare optimization algorithms in terms of classification performance and speed of convergence.
 \end{enumarate}
