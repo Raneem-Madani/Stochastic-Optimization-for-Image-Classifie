@@ -1,7 +1,7 @@
 # Stochastic Optimization for Image Classifier
 We will consider the following statistical model, defined by a function to minimize. It is called the Multinomial logisitic regression with squared 2-norm regularization. Denote $y_{i,j} = 1$ if the 5 image $i$ represents digit $j$ and 0 otherwise and consider a positive real number $\alpha$. The objective function is the convex function:
 $$F(w) = \frac{1}{n} \sum_{i = 1}^{n} F_i(w)$$ 
-Where, $~\forall i \in \{1,\dots \dots, n\}$
+Where, $~\forall i \in \{1,\dots \dots, n\}$\\
 $$F_i(w) = \log~(\sum_{j = 0}^{9} \exp~(\sum_{k = 1}^{d} x_{i,k}w_{k,j} )) - \sum_{j = 0}^{9} y_{i,j}(\sum_{k = 1}^{d} x_{i,k}w_{k,j}) + \frac{\alpha}{2} \|w\|^2_2$$
 Here $d$ is the number of pixel in the image xi,: and n is the number of images is the training data set. In this case, you should derive the formula for the stochastic gradients and use this formula in the algorithm.\\
 The work to do is as follows:
